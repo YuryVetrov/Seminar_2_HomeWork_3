@@ -3,30 +3,9 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
-string number = Console.ReadLine();
-int length = number.Length;
-if (number.Length <= 1)
-    Console.WriteLine("Нет второй цифры");
+
+string number = Console.ReadLine(); // задаём строку для введения числа
+if (number.Length <=2) // если число имеет индексы меньше 2 (не трехзначное число)
+    Console.WriteLine("Введите трехзначное число"); // то выведи на экран эту надпись
 else
-    Console.WriteLine(number[1]);
-//if (number < 0)
-   // (number = -number);
-   // {
-   //     Console.WriteLine("введите положительное число");
-   // }
-//string number = Console.ReadLine();
-//Console.WriteLine(number[2]);
-
-//if (number.Length() <= 0)
-    ///Console.WriteLine("Число состоит из одного числа, введите трехзначное число");
-//else
-    //Console.WriteLine(number[2]);
-
-//if (number.Length == 1)
-//Console.WriteLine("Нет второй цифры");
-        //while (num >= 1000)
-        //{
-            //num = num / 10;
-           // num /=10;
-        //}
-        //Console.WriteLine(num % 10);
+Console.WriteLine(number[2]); // в противном случае выведи на экран число под индексом 2
